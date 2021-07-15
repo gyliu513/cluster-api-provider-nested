@@ -164,5 +164,5 @@ func NewFrontProxyClientCertAndKey(ca *KeyPair) (*KeyPair, error) {
 	if !ok {
 		return nil, errors.New("fail to assert rsa private key")
 	}
-	return &KeyPair{ProxyClient, frontProxyClientCert, rsaKey, true, true}, nil
+	return &KeyPair{FrontProxyClient, frontProxyClientCert, rsaKey, true, true}, nil
 }

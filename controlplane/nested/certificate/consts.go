@@ -36,8 +36,8 @@ const (
 	// KubeletClient defines the client cert name for kubelet.
 	KubeletClient secret.Purpose = "kubelet-client"
 
-	// ProxyClient defines the client cert name for the front proxy.
-	ProxyClient secret.Purpose = "proxy-client"
+	// FrontProxyClient defines the client cert name for the front proxy.
+	FrontProxyClient secret.Purpose = "frontproxy-client"
 
 	// ControllerManagerKubeconfig defines the secret purpose for KCM Kubeconfigs.
 	ControllerManagerKubeconfig secret.Purpose = "controller-manager-kubeconfig"
